@@ -17,7 +17,6 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
   roscpp
   rospy
-  gram_savitzky_golay
 )
 
 # Compile third party libs

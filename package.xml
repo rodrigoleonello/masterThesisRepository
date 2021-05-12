@@ -2,7 +2,7 @@
 <package>
   <name>tum_ardrone</name>
   <version>0.0.0</version>
-  <description>The tum_ardrone package with LQR controller</description>
+  <description>The tum_ardrone package with state feedback controller</description>
 
   <maintainer email="rodrigosleonello@gmail.com">rodrigo</maintainer>
 

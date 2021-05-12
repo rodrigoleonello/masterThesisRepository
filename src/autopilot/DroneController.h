@@ -20,14 +20,12 @@
  */
 #ifndef __DRONECONTROLLER_H
 #define __DRONECONTROLLER_H
- 
- 
+
 #include "ros/ros.h"
 #include "TooN/se3.h"
 #include <queue>
 #include "geometry_msgs/Twist.h"
 #include "tum_ardrone/filter_state.h"
-#include <gram_savitzky_golay/gram_savitzky_golay.h>
 
 class ControlNode;
 
@@ -44,7 +42,6 @@ struct ControlCommand
 	double yaw, roll, pitch, gaz;
 };
 
-
 struct DronePosition
 {
 public:
@@ -60,47 +57,13 @@ class DroneController
 private:
 	ControlCommand lastSentControl;
 
-    bool aux;
-	bool aux1;
-	bool aux2;
-	bool aux3;
-	bool aux4;
-	bool aux5;
-	double after;
-	double tempo;
-	double tempo1;
-
 	double droll;
 	double dpitch;
-	double droll_before;
-	double dpitch_before;
 	double roll_before;
 	double pitch_before;
-
 	std::vector<double> roll_queue;
 	std::vector<double> pitch_queue;
 
-    //test quadratic signal
-	double aux_yaw;
-	double aux_roll;
-	double aux_pitch;
-	double aux_gaz;
-	bool chavear1;
-	bool chavear2;
-	bool chavear3;
-	bool chavear4;
-	int timer1;
-	int timer2;
-	int timer3;
-	int timer4;
-
-    ros::NodeHandle nh_;
-    ros::Publisher setpoint_pub;
-	std::string setpoint_channel;
-	ros::Publisher derivative_pub;
-	std::string derivative_channel;
-
-	
 	TooN::Vector<4> new_int_err;
 
 	// currentTarget.
@@ -123,9 +86,8 @@ private:
 	// filled with info (on update)
 	bool  ptamIsGood;
 	double scaleAccuracy;
-	// void calcControl(TooN::Vector<4> new_err, TooN::Vector<4> d_error, double yaw);
-	// void calcControl(double yaw, TooN::Vector<12> states);
-	void calcControl(double yaw, TooN::Vector<16> states, TooN::Vector<4> new_err);
+
+	void calcControl(TooN::Vector<16> states);
 
 public:
 
@@ -149,11 +111,7 @@ public:
 	DroneController(void);
 	~DroneController(void);
 
-
-
-
-
-	// PID control parameters. settable via dynamic_reconfigure
+	// Control parameters. settable via dynamic_reconfigure
 	// target is where i want to get to.
 	// pose and yaw are where i am.
 	double max_yaw;
@@ -163,18 +121,6 @@ public:
 
 	double rise_fac;
 	double agressiveness;
-
-	double Ki_yaw;
-	double Kd_yaw;
-	double Kp_yaw;
-
-	double Ki_gaz;
-	double Kd_gaz;
-	double Kp_gaz;
-
-	double Ki_rp;
-	double Kd_rp;
-	double Kp_rp;
 
 };
 #endif /* __DRONECONTROLLER_H */
