@@ -1,4 +1,4 @@
-# Package tum_ardrone with LQR and Hinf controllers
+# Package tum_ardrone with LQR and Hinf controller
 
 This package is based on the following publications:
 
@@ -8,7 +8,7 @@ This package is based on the following publications:
 
 Basically, the implementation found in the [tum_ardrone](https://github.com/tum-vision/tum_ardrone) package was used to test different controllers.
 
-You can find a [video](https://www.youtube.com/watch?v=CTL7NOJsIjA) on *youtube*.
+You can find a [video](https://youtu.be/Af73_2scaxk) on *youtube*.
 
 ## Installation
 
