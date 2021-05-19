@@ -1,4 +1,4 @@
-# Package tum_ardrone with LQR and Hinf controller
+# Package tum_ardrone with LQR and H infinity controller
 
 This package is based on the following publications:
 
@@ -40,7 +40,18 @@ roslaunch tum_ardrone tum_ardrone.launch
 <img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/lqr/LQR8POSES.png" width="600">
 
 - Control signals
-<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/lqr/LQR8CONTROLE.png" width="600">
+<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/lqr/LQR8CONTROL.png" width="600">
 
 - 3D response
 <img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/lqr/3D.png" width="600">
+
+### H infinity controller
+
+- Reference response
+<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/hinf/poses.png" width="600">
+
+- Control signals
+<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/hinf/control.png" width="600">
+
+- 3D response
+<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/hinf/3d.png" width="600">
