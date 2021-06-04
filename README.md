@@ -37,21 +37,21 @@ roslaunch tum_ardrone tum_ardrone.launch
 ### LQR controller
 
 - Reference response
-<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/lqr/LQR8POSES.png" width="600">
+<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/lqr/LQR8POSES2.jpg" width="600">
 
 - Control signals
-<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/lqr/LQR8CONTROL.png" width="600">
+<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/lqr/LQR8CONTROL2.jpg" width="600">
 
 - 3D response
-<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/lqr/3D.png" width="600">
+<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/lqr/3D2.jpg" width="600">
 
 ### H infinity controller
 
 - Reference response
-<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/hinf/poses.png" width="600">
+<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/hinf/poses2.jpg" width="600">
 
 - Control signals
-<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/hinf/control.png" width="600">
+<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/hinf/control2.jpg" width="600">
 
 - 3D response
-<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/hinf/3d.png" width="600">
+<img src="https://raw.githubusercontent.com/rodrigoleonello/masterThesisRepository/main/results/hinf/3d2.jpg" width="600">
