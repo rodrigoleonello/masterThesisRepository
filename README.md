@@ -10,7 +10,7 @@ Basically, the implementation found in the [tum_ardrone](https://github.com/tum-
 
 The state feedback gains was calculated using the matlab files, seen in the matlab folder 
 
-You can find a [video](https://youtu.be/Af73_2scaxk) on *youtube*.
+You can find some videos on *youtube*: [LQR controller](https://youtu.be/Af73_2scaxk) and [H infinity controller](https://youtu.be/WUB3kM0IfaE)
 
 ## Installation
 
